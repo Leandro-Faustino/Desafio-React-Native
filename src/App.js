@@ -61,7 +61,7 @@ api.get('repositories').then(repository =>{
           <View style={styles.likesContainer}>
             <Text
               style={styles.likeText}
-              // Remember to replace "1" below with repository ID: {`repository-likes-${repository.id}`}
+             
               testID={`repository-likes-${repository.id}`}
             >
               {repository.likes} curtidas
@@ -71,7 +71,7 @@ api.get('repositories').then(repository =>{
           <TouchableOpacity
             style={styles.button}
             onPress={() => handleLikeRepository(repository.id)}
-            // Remember to replace "1" below with repository ID: {`like-button-${repository.id}`}
+            
             testID={`like-button-${repository.id}`}
           >
             <Text style={styles.buttonText}>Curtir</Text>
